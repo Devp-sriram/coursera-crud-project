@@ -1,6 +1,8 @@
-const express = require('express')
-const connectDb = require("./config/db");
-const cors = require("cors");
+import express from 'express'
+import connectDb  from "./config/db.js"
+import cors from "cors"
+import login from './routes/login.js';
+import signin from './routes/signin.js'
 
 const app = express();
 const port = 4000;
@@ -9,12 +11,14 @@ app.use(cors({origin:"*"}));
 
 
 
-connectDb();
+await connectDb();
 
 
 app.get("/" ,(req,res)=>{
     res.send("hello world");
 });
+app.use('/login',login);
+app.use('/signin',signin);
 
 app.listen(port,()=>{
     console.log(`App listening on port ${port}`);
