@@ -16,7 +16,7 @@ export default router.post('/:id',async (req,res)=>{
   if(!(firstname , lastname)){
     return res.status(404).send('please put the username , password');
   }
-  
+ 
   try{
  
   await addEmployee(id,{firstname , lastname , dep }) 
