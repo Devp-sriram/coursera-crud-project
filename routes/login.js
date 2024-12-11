@@ -13,6 +13,9 @@ export default router.post('/',async (req,res)=>{
 
   const user = await checkUser(email);
   let pw = user.password;
+   // console.log(pw);
+   // console.log(password);
+   // console.log(user);
   let employeeData = user.data
 
       if(password === pw){

@@ -12,5 +12,6 @@ export default async function addEmployee(userId, newEmployee) {
        console.error("Error adding employee:", error);
      }finally{
       console.log("Employee added successfully");
+      return await User.findById(userId);
      }
 };

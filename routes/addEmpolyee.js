@@ -18,15 +18,14 @@ export default router.post('/:id',async (req,res)=>{
   }
  
   try{
- 
-  await addEmployee(id,{firstname , lastname , dep }) 
+  const user = await addEmployee(id,{firstname , lastname , dep })
+  if(user){res.status(201).json({    
+            message: `Employee ${firstname} ${lastname} added successfully`,
+            employee: { firstname, lastname, dep },
+            allEmployees : user.data,
+        })}
   }catch(err){
       console.log(err)
-      return res.status(401).send(`employee not added`);
-  }finally{
-    return res.status(201).json({
-            message: `Employee ${firstname} ${lastname} added successfully`,
-            employee: { firstname, lastname, dep }
-        });
- } 
+      return res.status(404).send(`employee not added`);
+  } 
 })
