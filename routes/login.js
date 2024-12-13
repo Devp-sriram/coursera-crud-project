@@ -12,16 +12,15 @@ export default router.post('/',async (req,res)=>{
   }
 
   const user = await checkUser(email);
+    if(!user){return res.status(404).send('this email not already registerted, go to signin')}
   let pw = user.password;
    // console.log(pw);
    // console.log(password);
-   // console.log(user);
-  let employeeData = user.data
-
+   console.log(user);
       if(password === pw){
-           return res.status(200).send(employeeData);
+           return res.status(200).send(user); // sending user data to client
       }else{
-           return res.status(401).send(`user not found`);
+           return res.status(401).send(`wrong password`);
       }
   
 })
