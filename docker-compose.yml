@@ -9,7 +9,7 @@ services:
       - mongo
 
     environment:
-      - MONGO_URI=mongodb+srv://devp_sriram:kXoTP83RTF0qaeyt@crud-app.ko0xt.mongodb.net/?retryWrites=true&w=majority&appName=crud-app
+      - MONGO_URI=${DB_URL}
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:4000"]
       interval: 30s
