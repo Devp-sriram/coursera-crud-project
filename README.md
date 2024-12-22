@@ -1,7 +1,7 @@
 
 # Employee Management Backend
 
-This is a RESTful API built with Node.js, Express.js, and MongoDB for managing employee data. It serves as the backend companion to the Employee App frontend.
+This is a RESTful API built with Node.js, Express.js, and MongoDB for managing employee data. It serves as the backend companion to the [Employee App frontend](https://github.com/Devp-sriram/frontend-for-coursera-crud-app).
 
 ## Features
 
@@ -53,16 +53,24 @@ DB_URL = <mongodb url>
 
 
 1. **signin**
+   
    -POST `/signin`
-   -request body : 
+   
+   -request body :
+
+
    ```json
    { "email": "john@example.com", "password": "John@123","company":"john & Doe co"}
     ```
 
 
 2. **login**
+   
    -POST /login
+   
    (you get all data from back-end replacement of GET request)
+   
+
    -request body :
    ```json
     { "email": "john@example.com", "password": "John@123" }
@@ -70,8 +78,12 @@ DB_URL = <mongodb url>
 
 
 3.**Add-Employee**
+
   -POST /addEmployee/:id
+  
   (id = _id on user collection db)
+
+  
   -request body :
   ```json
   {
@@ -83,11 +95,14 @@ DB_URL = <mongodb url>
 
 
 4.**update-Employee**
+
   -PUT /updateEmployee/:id/:employeeid
+  
   **(
    id :  _id on user collection db , 
    employeeId : _id of employee from data array on corresponding document in user collection 
   )**
+  
   request body :
   ```json 
     {
@@ -97,10 +112,13 @@ DB_URL = <mongodb url>
     }
   ```
 
-5.**Delete-Employee
+5.**Delete-Employee**
+
   -DELETE /deleteEmployee/:id/:employeeid
+  
   **(
    id :  _id on user collection db , 
    employeeId : _id of employee from data array on corresponding document in user collection 
   )**
+
   request body : none
