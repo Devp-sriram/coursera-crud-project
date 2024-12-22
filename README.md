@@ -28,13 +28,13 @@ Clone the repository:
 git clone https://github.com/Devp-sriram/coursera-crud-project
 ```
 
-# Install dependencies 
+### Install dependencies 
 
 ```bash
 npm Install
 ```
 
-# Start server
+### Start server
 
 ```bash
 npm start
@@ -43,13 +43,13 @@ npm start
 open http://localhost:4000/
 
 
-# add .env file
+### add .env file
 
 ```bash
 DB_URL = <mongodb url>
 ```
 
-# db schema 
+### db schema 
 ```json
 {
 "_id":{"$oid":"675997c56eead6e20ec3d35f"},
@@ -81,7 +81,7 @@ DB_URL = <mongodb url>
 "__v":{"$numberInt":"0"}}
 ```
 
-# endpoints
+### endpoints
 
 
 1. **signin**
