@@ -51,7 +51,34 @@ DB_URL = <mongodb url>
 
 # db schema 
 ```json
-{"_id":{"$oid":"675997c56eead6e20ec3d35f"},"email":"lawrance@gmail.com","password":"Lawrance@110","company":"110 traders","data":[{"firstname":"Bruce ","lastname":"Wayne","dep":"dermatologist","_id":{"$oid":"6767c1131ad6dbfe7720be78"}},{"firstname":"Foxx","lastname":"Rayappan","dep":"dentist","_id":{"$oid":"6767d6d7a333ecf4b9dfa051"}},{"firstname":"Alfred","lastname":"Ayyasamy","dep":"dentist","_id":{"$oid":"6767d6e5a333ecf4b9dfa057"}}],"createdAt":{"$date":{"$numberLong":"1733924808603"}},"updatedAt":{"$date":{"$numberLong":"1734858481046"}},"__v":{"$numberInt":"0"}}
+{
+"_id":{"$oid":"675997c56eead6e20ec3d35f"},
+"email":"lawrance@gmail.com",
+"password":"Lawrance@110",
+"company":"110 traders",
+"data":[
+   {
+   "firstname":"Bruce",
+   "lastname":"venkatraman",
+   "dep":"dermatologist",
+   "_id":{"$oid":"6767c1131ad6dbfe7720be78"}
+   },
+   {
+   "firstname":"Foxx",
+   "lastname":"Rayappan",
+   "dep":"dentist",
+   "_id":{"$oid":"6767d6d7a333ecf4b9dfa051"}
+   },
+   {
+   "firstname":"Alfred",
+   "lastname":"Ayyasamy",
+   "dep":"dentist",
+   "_id":{"$oid":"6767d6e5a333ecf4b9dfa057"}
+   }
+],
+"createdAt":{"$date":{"$numberLong":"1733924808603"}},
+"updatedAt":{"$date":{"$numberLong":"1734858481046"}},
+"__v":{"$numberInt":"0"}}
 ```
 
 # endpoints
