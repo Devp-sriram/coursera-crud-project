@@ -13,5 +13,5 @@ export default async function addEmployee(userId, newEmployee) {
      }finally{
       console.log("Employee added successfully");
       return await User.findById(userId);
-     }
+     };
 };
