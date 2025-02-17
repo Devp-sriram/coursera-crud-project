@@ -33,7 +33,7 @@ git clone https://github.com/Devp-sriram/coursera-crud-project
 ### Install dependencies 
 
 ```bash
-npm Install
+npm install
 ```
 
 ### Start server
