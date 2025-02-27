@@ -121,7 +121,7 @@ export default function Page() {
                       <span>{emp.dep}</span>
                     )}
                 </td>
-              <td className="p-8 flex justify-center items-center space-x-2">
+              <td className="p-6 flex justify-center items-center space-x-2">
                   {!edit.status &&
                   <>
   
